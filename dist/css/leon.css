@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+header {
+  height: 64px;
+}
+header .header-align {
+  height: 64px;
+}
+header .logo {
+  width: 60px;
+}
+header .toggle {
+  position: relative;
+}
+header .toggle .icon {
+  display: flex;
+  flex-flow: row wrap;
+  width: 30px;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+header .toggle .icon span {
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+header .toggle .icon span:first-child, header .toggle .icon span:last-child {
+  width: 100%;
+  transition: 0.8s;
+}
+header .toggle .icon span:nth-child(2) {
+  width: 50%;
+  transition: 0.5s;
+}
+header .toggle .icon:hover span:first-child, header .toggle .icon:hover span:last-child {
+  background-color: #10cab7;
+}
+header .toggle .icon:hover span:nth-child(2) {
+  width: 100%;
+  background-color: #10cab7;
+}
+header .toggle .nav {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  border: 1px solid #fff;
+  width: 200px;
+  max-width: 200px;
+  z-index: 1;
+  background-color: #f6f6f6;
+}
+header .toggle .nav a {
+  padding: 15px;
+  color: #333;
+  transition: margin-left 0.5s;
+}
+header .toggle .nav a:hover {
+  margin-left: 12px;
+  font-weight: 500;
+  color: #10cab7;
+}
+header .toggle .nav a:last-child {
+  border-bottom: none;
+}
+header .toggle .nav::before {
+  content: "";
+  border: 10px solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  top: -20px;
+  right: 1px;
+}
+header .toggle:hover .nav {
+  display: flex;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    width: 546px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 962px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.responsive-img {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-flow: column;
+}
+.nav-links a {
+  text-decoration: none;
+}
+
+.d-none {
+  display: none;
+}
+
+.custom-border {
+  border: 1px solid;
+  border-color: transparent transparent #ccc transparent;
+}/*# sourceMappingURL=leon.css.map */

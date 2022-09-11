@@ -1,0 +1,104 @@
+
+$light-blue : #10cab7;
+$light-gray-one : #f6f6f6;
+$black-one : #333;
+$light-gray-two : #ccc;
+$pure-white : #fff;
+
+
+header {
+
+    height : 64px;
+
+    .header-align {
+        height: 64px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .toggle {
+
+        position: relative;
+
+        .icon {
+
+            display: flex;
+            flex-flow: row wrap;
+            width: 30px;
+            justify-content: flex-end;
+            cursor: pointer;
+
+            span {
+                height: 2px;
+                background-color: $black-one;
+                margin-bottom: 5px;
+
+                &:first-child , &:last-child  {
+                    width: 100%;
+                    transition: 0.8s ;
+
+                }
+                &:nth-child(2) {
+                    width: 50%;
+                    transition: 0.5s ;
+                }
+            }
+        }
+        .icon:hover {
+            span {
+                &:first-child , &:last-child {
+                    background-color: $light-blue ;
+                }
+
+                &:nth-child(2) {
+                    width: 100%;
+                    background-color: $light-blue ;
+                }
+            }
+
+        }
+
+        .nav {
+            position: absolute;
+            right: 0;
+            top: 30px;
+            border: 1px solid $pure-white;
+            width: 200px;
+            max-width: 200px;
+            z-index: 1;
+            background-color: $light-gray-one;
+
+            a {
+                padding: 15px;
+                color: $black-one;
+                transition: margin-left  0.5s;
+
+                &:hover {
+                    margin-left: 12px;
+                    font-weight: 500;
+                    color: $light-blue;
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+
+        }
+        .nav::before {
+            content: '';
+            border: 10px solid ;
+            border-color: transparent transparent $light-gray-one transparent;
+            position: absolute;
+            top: -20px;
+            right: 1px;
+        }
+    }
+    .toggle:hover .nav {
+        display: flex;
+    }
+
+    
+}
