@@ -1,9 +1,5 @@
 
-$light-blue : #10cab7;
-$light-gray-one : #f6f6f6;
-$black-one : #333;
-$light-gray-two : #ccc;
-$pure-white : #fff;
+@import 'colors' ;
 
 
 header {
@@ -21,6 +17,7 @@ header {
     .toggle {
 
         position: relative;
+        cursor: pointer;
 
         .icon {
 
@@ -46,7 +43,8 @@ header {
                 }
             }
         }
-        .icon:hover {
+
+        &:hover .icon {
             span {
                 &:first-child , &:last-child {
                     background-color: $light-blue ;
@@ -100,5 +98,4 @@ header {
         display: flex;
     }
 
-    
 }

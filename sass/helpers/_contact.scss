@@ -1,0 +1,39 @@
+
+@import "colors" ;
+
+.contact {
+    background-color: $light-gray-one;
+    padding: 60px;
+    text-align: center;
+
+    .label {
+        font-size: 35px;
+        margin: 2.19rem 0 0.94rem 2.19rem;
+        font-weight: bold;
+        color: $dark-green;
+    }
+
+    p {
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: $light-blue;
+            font-size: 35px;
+        }    
+    }
+
+    .social {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+
+        .social-icon  { 
+            a {
+                color: $dark-green;
+                margin-left: 5px;
+
+            }
+        }
+    }
+}

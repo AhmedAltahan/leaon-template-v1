@@ -1,0 +1,71 @@
+
+@import 'colors' ;
+
+.features {
+
+    background-color: $light-gray-one;
+
+    .feature-container {
+
+        .feature-content {
+
+            margin: 60px 0;
+
+            svg {
+                color: $light-blue;
+                font-size: 3rem;
+                margin : 10px 0 ;
+            }
+
+            h3 {
+                color: $black;
+                margin: 15px 0;
+            }
+
+            p {
+                color: $black-two;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+
+@media (max-width : 575.98px) { //for XS screen
+    .one , .two , .three {
+        margin: 20px 0 !important;
+    }
+}
+
+@media (min-width : 576px) and (max-width: 767px) { //for SM screen
+
+    .one {
+        margin-top: 40px !important;
+        margin-bottom: 18px !important;
+    } 
+
+    .two  {
+        margin: 18px 0 !important;
+    }
+
+    .three {
+        margin-top: 18px !important;
+        margin-bottom: 40px ;
+    }
+}
+
+@media (min-width : 768px) and (max-width:991.9px) { //for MD screen
+
+    .feature-container {
+        justify-content: center ;
+    }
+
+    .one , .two  {
+        margin: 18px 0 !important;
+    }
+
+    .three {
+        margin-top: 18px !important;
+        margin-bottom: 30px !important ;
+    }
+}

@@ -1,0 +1,38 @@
+
+
+@import 'colors' ;
+
+
+.portofolio {
+    background-color: $light-gray-one;
+    padding-bottom: 60px;
+
+
+    .portofolio-custom-header {
+        padding: 70px 0 ;
+        
+    }
+
+    .portofolio-container {
+        
+        .portofolio-content {
+            background-color: $pure-white;
+            margin: 30px 20px;
+            
+    
+            .portofolio-text {
+                padding: 20px;
+    
+                p {
+                    margin-top: 1rem;
+                    color: $black-two;
+                    line-height: 1.5;
+                }
+            }
+        }
+    
+    }
+    
+}
+
+

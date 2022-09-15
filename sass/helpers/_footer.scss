@@ -1,0 +1,18 @@
+
+
+@import "colors";
+
+footer {
+    padding: 30px;
+    background-color: $dark-green;
+
+    p {
+        color: $pure-white;
+        font-size: 18px
+
+    }
+    span {
+        color: $light-blue;
+        font-weight: bold;
+    }
+}
